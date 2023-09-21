@@ -1,0 +1,35 @@
+@import url('./header.css');
+@import url('./footer.css');
+
+:root {
+    --fonte-principal: 'Montserrat', sans-serif;
+    --fonte-logo: 'Inter', sans-serif;
+    --roxo-claro:#6757f9;
+    --preto: #141414;
+    --branco: #FFFFFF;
+    --preto-claro:#3f3347;
+    --vermelho-claro:#f05a78;
+    --amarelo:#f8d63d;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 16px;
+}
+
+.cabecalho__logo-link {
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width:0.6rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--roxo-claro);
+}
+::-webkit-scrollbar-track{
+    background: #e1e1e1;
+}

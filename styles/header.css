@@ -1,0 +1,241 @@
+nav {
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: var(--branco);
+    box-shadow: 0rem 0rem 1rem 0.4rem var(--preto-claro);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.cabecalho-lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 100%;
+    font-size: 1.2rem;
+}
+
+.logo {
+    width: 3rem;
+}
+
+.cabecalho__logo-inicio {
+    font-family: var(--fonte-logo);
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--roxo-claro);
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.cabecalho__logo-inicio:hover {
+    color: var(--vermelho-claro);
+}
+
+.cabecalho__logo-final {
+    font-weight: 400;
+    font-style: italic;
+}
+
+/*Pesquisa*/
+.group {
+    display: flex;
+    line-height: 2rem;
+    align-items: center;
+    position: relative;
+    max-width: 22rem;
+}
+
+.input {
+    width: 100%;
+    height: 3rem;
+    line-height: 2rem;
+    padding-right: 1.5rem;
+    padding-left: 2.8rem;
+    border: 2px solid var(--roxo-claro);
+    box-shadow: 0 0 0rem 0.2rem #6757f915;
+    border-radius: 1rem;
+    outline: none;
+    background-color: var(--branco);
+    color: var(--preto-claro);
+    transition: 0.3s ease;
+}
+
+.input::placeholder {
+    color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+    outline: none;
+    border-color: var(--vermelho-claro);
+    background-color: var(--branco);
+    box-shadow: 0 0 0rem 0.2rem #f359942b;
+}
+
+.icon {
+    position: absolute;
+    left: 0.7rem;
+    fill: #5f5f62;
+    width: 1.4rem;
+    height: 1.4rem;
+    cursor: pointer;
+}
+.cabecalho-lista__link a {
+    text-decoration: none;
+    color: var(--roxo-claro);
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+.cabecalho-lista__item:hover{
+    color: var(--vermelho-claro);
+}
+
+.cabecalho-lista__item-botao {
+    font-weight: 600;
+    border-radius: 20px;
+    padding: .5em 1em;
+    color: var(--branco);
+    border: var(--roxo-claro) 2px solid;
+    background-color: var(--roxo-claro);
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.cabecalho-lista__item-botao:hover {
+    background-color: var(--vermelho-claro);
+    border: var(--vermelho-claro) 2px solid;
+    color: var(--branco);
+}
+.cabecalho-lista__item-botao__branco {
+    font-weight: 600;
+    border-radius: 20px;
+    padding: .5em 1em;
+    color: var(--roxo-claro);
+    border: var(--roxo-claro) 2px solid;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.cabecalho-lista__item-botao__branco:hover {
+    color: var(--vermelho-claro);
+    border: var(--vermelho-claro) 2px solid;
+}
+
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 2.3rem;
+    height: 0.1rem;
+    background-color: var(--roxo-claro);
+    margin: 0.5rem;
+    transition: 0.3s;
+}
+
+
+
+/*MOBILE*/
+@media(max-width: 1050px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .cabecalho-lista {
+        position: absolute;
+        top: 0vh;
+        right: 0rem;
+        width: 35vw;
+        height: 110vh;
+        background: var(--branco);
+        justify-content:flex-start;
+        flex-direction: column;
+        gap: 5rem;
+        padding-top: 8rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 999;
+        position: fixed;
+    }
+
+    .menu__item-link {
+        font-size: 1.2rem;
+    }
+
+    .mobile-menu {
+        display: block;
+        z-index: 1000;
+        position: fixed;
+        right: 1rem;
+    }
+}
+
+.cabecalho-lista.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+    background-color: var(--roxo-claro);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+    background-color: var(--roxo-claro);
+}
+
+
+@media(max-width: 770px) {
+
+    .cabecalho-lista {
+        width: 50vw;
+        font-size: 1.1rem;
+    }
+
+    .cabecalho-lista__item-link {
+        font-size: 1.1rem;
+    }
+}
+@media(max-width: 525px){
+    .cabecalho-lista {
+        width: 65vw;
+    }
+    .group {
+        max-width: 14rem;
+    }
+}
+@media(max-width: 399px){
+    .group{
+        max-width: 13rem
+    }
+    .input {
+        height: 2.7rem;
+    }
+    .cabecalho-lista {
+        width: 75vw;
+        font-size: 1rem;
+    }
+}

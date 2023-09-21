@@ -1,0 +1,60 @@
+.principal__formulario_acesso{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.forgot-pass a{
+    font-size: 1rem;
+    color: var(--preto-claro);
+}
+.sign-up a{
+    font-size: 1rem;
+    color: var(--roxo-claro);
+    font-weight: 600;
+}
+  /*progressbar*/
+  ul#progressbar {
+    margin: 2rem 0rem 3rem 0rem;
+    overflow: hidden;
+    counter-reset: step;
+    z-index: -1;
+  }
+  #progressbar li {
+    list-style-type: none;
+    color: var(--preto-claro);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    width: 33.33%;
+    float: left;
+    position: relative;
+  }
+  #progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 2rem;
+    line-height: 2rem;
+    display: block;
+    font-size: 1rem;
+    color: var(--branco);
+    background: var(--vermelho-claro);
+    border-radius: 0.5rem;
+    margin: 0 auto 0.8rem auto; 
+    z-index: -1;
+  }
+  #progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 0.2rem;
+    background: rgb(183, 183, 183);
+    position: absolute;
+    right: 48%;
+    top: 1rem;
+    z-index: -1;
+  }
+  #progressbar li:first-child:after {
+    content: none; 
+  }
+  #progressbar li.active:before,  #progressbar li.active:after{
+    background: var(--roxo-claro);
+    color: var(--branco);
+  }

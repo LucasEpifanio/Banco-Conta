@@ -1,0 +1,261 @@
+section{
+    padding: 4.5rem 0 3rem;
+}
+.container{
+max-width: 92%;
+margin-left: auto;
+margin-right: auto;
+}
+.banner{
+    margin-top: 10rem;
+    background: url(../../img/banner-cliente.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 24rem;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.background {
+    position: absolute;
+    width: 92%;
+    height: 31.5rem;
+    top: 10rem;
+    background-color: var(--roxo-claro); 
+    border-radius: 1.5rem;
+    z-index: -1;
+}
+
+.banner-text{
+    padding-left: 35px;
+}
+.banner__titulo{
+    font-weight: 900;
+    color: var(--branco);
+    font-size: 3rem;
+    line-height: 3.2rem;
+    text-shadow: var(--roxo-claro) 0.1rem 0.1rem 0.9rem;
+    z-index: 333;
+}
+
+.banner__titulo {
+    width: 42%;
+    margin: 0 1rem
+}
+
+.servicos__titulo,
+.beneficios__titulo {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 1em 0;
+    color: var(--preto-claro);
+}
+
+.lista-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4em 0;
+}
+
+.item-servicos__titulo {
+    background-color: var(--roxo-claro);
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5em 0;
+    border-radius: 0px 0px 20px 20px;
+    cursor: pointer;
+}
+.item-servicos{
+    padding: 2rem;
+    width: 21rem;
+    transition: 0.3s ease-in;
+}
+.item-servicos:hover{
+    transform: translateY(-1.2rem);
+}
+.item-servicos__imagem {
+    display: block;
+    width: 21rem;
+    background: #7531b157;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px; 
+    cursor: pointer;
+}
+
+.conta {
+    background-image: url("../../img/banner-gato.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    align-items: center;
+}
+.conta__titulo{
+    color: var(--branco);
+    font-size: 3rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    text-shadow: var(--roxo-claro) 0.1rem 0.1rem 0.6rem
+}
+
+
+.conta__botao {
+    display: block;
+    margin-top: 1rem;
+    width: 38%;
+    text-align: center;
+    background: var(--roxo-claro);
+    border-radius: 1rem;
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding: 1rem 0.5rem;
+    transition: 0.3s ease;
+}
+.conta__botao:hover{
+    background: var(--vermelho-claro);
+}
+
+.beneficios-lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4em;
+    text-align: center;
+}
+
+.beneficios-lista__item {
+    width: 20%;
+}
+
+.beneficios__icone {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.icone-presente {
+    background-image: url('../../img/cartao-de-credito.png');
+}
+
+.icone-saque {
+    background-image: url('../../img/saques.png');
+}
+
+.icone-estrela {
+    background-image: url('../../img/pontos.png')
+}
+
+.icone-gato {
+    background-image: url('../../img/pets.png')
+}
+
+.beneficios-lista__titulo {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--roxo-claro);
+    margin: .5em 0;
+}
+
+@media screen and (max-width: 1099px) {
+    .beneficios-lista {
+        display: block;
+    }
+
+    .beneficios-lista__item {
+        width: auto;
+        padding: 1.5rem;
+    }
+
+    .conta__titulo {
+        font-size: 2.5rem;
+    }
+    .conta{
+        grid-template-columns: 25% 68%;
+    }
+    .banner__titulo{
+        font-size: 3rem;
+    }
+    
+    .banner__titulo {
+        width: 70%;
+        margin: 0 1rem
+    }
+    .item-servicos{
+        padding: 2rem;
+        width: 18rem;
+    }
+    .item-servicos__imagem {
+        display: block;
+        width: 18rem;
+    }
+    .conta__botao {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .conta{
+        grid-template-columns: 5% 88%;
+    }
+    .conta__titulo {
+        font-size: 2.2rem;
+    }
+    .banner__titulo{
+        line-height: 3rem;
+        font-size: 2.5rem;
+    }
+    
+    .banner__titulo {
+        width: 90%;
+    }
+    .conta__botao {
+        width: 65%;
+    }
+    .banner-text{
+        padding-left: 25px;
+    }
+}
+@media screen and (max-width: 450px){
+    .conta{
+        grid-template-columns: 3% 85%;
+    }
+    .conta__titulo {
+        font-size: 1.8rem;
+    }
+    .conta__botao{
+        font-size: 1.1rem;
+        width: 80%;
+    } 
+    .item-servicos__titulo {
+        font-size: 1.3rem;
+    }
+    .item-servicos{
+        width: 17rem;
+    }
+    .item-servicos__imagem {
+        width: 17rem;
+    }
+    .conta__botao {
+        width: 80%;
+    }
+    .banner-text{
+        padding-left: 0px;
+    }
+    .banner__titulo {
+        font-size: 2.2rem;
+    }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterBank - Abrir conta</title>
+    <link rel="shortcut icon" type="image/jpg" href="../favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+        integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/formulario/styles.css">
+    <link rel="stylesheet" href="../styles/formulario/progress-2.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <a href='../index.html' class="cabecalho__logo-link">
+                <h1 class="cabecalho__logo-inicio"><img class="logo" src="../favicon.png" alt="logo do Banco"></img>aster<span class="cabecalho__logo-final">Bank</span></h1>
+            </a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+    
+          <ul class="cabecalho-lista">
+            <li class="cabecalho-lista__link">
+                <a href="#" class="cabecalho-lista__item">Serviços</a>
+            </li>
+            <li class="cabecalho-lista__link">
+                <a href="#" class="cabecalho-lista__item">Vantagens</a>
+            </li>
+            <li class="cabecalho-lista__link">
+                <div class="group">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                <input placeholder="Busque Aqui" type="search" class="input">
+                </div>
+            </li>
+            <li class="cabecalho-lista__link--roxo">
+                <a href="#" class="cabecalho-lista__item-botao">Abrir conta</a>
+            </li>
+            <li class="cabecalho-lista__link--branco">
+                <a href="./acessar-conta.html" class="cabecalho-lista__item-botao__branco">Acessar conta</a>
+            </li>
+        </ul>
+        </nav>
+      </header>
+
+      <section class="banner container" id="banner">
+        <div class="banner-text">
+            <h3 class="banner__titulo">Master<span style="font-style: italic;">Bank</span>  é o primeiro passo para a liberdade financeira!</h3>
+        </div>
+    </section>
+
+    <main class="container">
+        <ul class="breadcrumb">
+            <li>Inicio</li>
+            <li class="breadcrumb__pagina">Abrir conta</li>
+        </ul>
+
+
+        <section class="formulario">
+            <div class="formulario__container">
+                <ul id="progressbar">
+                    <li class="active"></li>
+                    <li class="active"></li>
+                    <li></li>
+                  </ul>
+                <h2 class="formulario__titulo-texto">Reconhecimento facial</h2>
+                <p class="formulario__texto">Clique no quadro abaixo para capturarmos uma imagem sua!</p>
+                <br>
+                <img src="../img/reconhecimento.png" alt="Rosto com olhos e um sorriso dentro de um enquadramento"
+                    data-video-botao class="formulario__imagem">
+
+                <div class="formulario__camera" data-camera>
+                    <video autoplay data-video></video>
+                    <button class='camera__botao' data-tirar-foto>Tirar foto</button>
+                </div>
+
+                <div class="formulario__mensagem" data-mensagem>
+                    <canvas data-video-canvas></canvas>
+                    <img src="../img/ícone check.png" alt="Ícone de validação" class="formulario__imagem">
+                    <p>Prontinho, imagem capturada!</p>
+
+                    <a href="#" class="formulario__botao formulario__botao--ancora" data-enviar>Quero abrir minha
+                        conta!</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <section class="rodape__empresa">
+            <h2 class="rodape__titulo">O MasterBank</h2>
+            <ul class="rodape__lista">
+                <li>
+                    <a href="#" class="rodape__link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape__link">Perguntas frequentes</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape__link">Carreira</a>
+                </li>
+            </ul>
+        </section>
+        <section class="rodape__servicos">
+            <h2 class="rodape__titulo">Serviços</h2>
+            <ul class="rodape__lista">
+                <li>
+                    <a href="#" class="rodape__link">Conta corrente</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape__link">Conta PJ</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape__link">Cartão de crédito</a>
+                </li>
+            </ul>
+        </section>
+        <section class="rodape__contato">
+            <h2 class="rodape__titulo">Contato</h2>
+            <ul class="rodape__lista">
+                <li>
+                    <a href="#" class="rodape__link">0800 004 250 08</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape__link">meajuda@masterbank.com.br</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape__link">ouvidoria@mastarbank.com.br</a>
+                </li>
+            </ul>
+        </section>
+        <section class="rodape__redes-sociais">
+            <h2 class="rodape__titulo">Acesse nossas redes</h2>
+            <ul class="rodape__lista redes-sociais__lista">
+                <li><img src="../img/Facebook.png" alt="ícone do facebook"></li>
+                <li><img src="../img/Youtube.png" alt="ícone do youtube"></li>
+                <li><img src="../img/Whatsapp.png" alt="ícone do whatsapp"></li>
+                <li><img src="../img/Instagram.png" alt="ícone do instagram"></li>
+            </ul>
+            <h2 class="rodape__logo"><span class="rodape__logo--negrito">Master</span>Bank</h2>
+        </section>
+    </footer>
+
+    <script src="../js/camera.js"></script>
+    <script src="../js/nav-bar.js"></script>
+</body>
+
+</html>
