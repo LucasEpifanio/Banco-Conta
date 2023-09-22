@@ -213,11 +213,11 @@ canvas{
     }
     video{
         width: 260px;
-        height: 200px;
+        height: 150px;
     }
     canvas{
-        width: 220px;
-        height: 180px;
+        width: 260px;
+        height: 150px;
     }
     .banner{
         height: 16rem;
