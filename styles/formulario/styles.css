@@ -216,7 +216,7 @@ canvas{
         height: 150px;
     }
     canvas{
-        width: 260px;
+        width: 230px;
         height: 150px;
     }
     .banner{
@@ -226,10 +226,4 @@ canvas{
 .camera__botao {
     font-size: 1.1rem;
 }
-}
-@media screen and (max-width: 650px){
-    .formulario__botao,
-    .camera__botao {
-        font-size: 1rem;
-    }
 }
