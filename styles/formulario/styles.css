@@ -215,6 +215,10 @@ canvas{
         width: 260px;
         height: 150px;
     }
+    canvas{
+        width: 260px;
+        height: 150px;
+    }
     .banner{
         height: 16rem;
     }
